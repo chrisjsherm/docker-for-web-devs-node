@@ -18,7 +18,7 @@ VOLUME ["/var/www"]
 RUN npm install
 
 # Run this container on port 3000.
-EXPOSE 3000
+EXPOSE ${PORT}
 
 # Command to kick off the container.
 ENTRYPOINT ["npm", "start"]
