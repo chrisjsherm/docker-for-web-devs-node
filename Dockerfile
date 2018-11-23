@@ -12,9 +12,6 @@ COPY . /var/www
 # Run commands in the context of the /var/www directory inside the container.
 WORKDIR /var/www
 
-# Keep our working directory on the host system, managed by Docker.
-VOLUME ["/var/www"]
-
 RUN npm install
 
 # Run this container on port 3000.
